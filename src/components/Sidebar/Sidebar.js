@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './Sidebar.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,8 +13,9 @@ const Sidebar = () => {
   return (
     <div className={`sidebar ${isOpen ? 'open' : ''}`}>
       <div className="sidebar-toggle" onClick={toggleSidebar}>
-        <i className={`fa ${isOpen ? 'fa-times' : 'fa-bars'}`}></i>
-      </div>
+  <FontAwesomeIcon icon={isOpen ? faTimes : faBars} />
+</div>
+
       <ul className="sidebar-links">
         <li>
           <a href="/">Home</a>

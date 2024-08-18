@@ -2,13 +2,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 60px;
     padding: 10px 20px;
     background-color: white;
     border-bottom: 1px solid #ddd;
+    z-index: 2000;
   }
   
   .navbar-logo img {
-    height: 40px;
+    height: 40px; 
+    
+    margin-left: 40px;
   }
   
   .navbar-links {
@@ -24,7 +28,7 @@
   .navbar-links a {
     text-decoration: none;
     color: black;
-    font-weight: bold;
+    
   }
   
   .navbar-icons a {
