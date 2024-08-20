@@ -28,12 +28,15 @@
   .navbar-links a {
     text-decoration: none;
     color: black;
+    transition: color 0.3s ease;
     
   }
-  
-  .navbar-icons a {
-    margin-left: 20px;
-    font-size: 18px;
-    color: black;
+
+  .navbar-links a:hover{
+    color: coral;
   }
+  
+  
+
+  
 
