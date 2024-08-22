@@ -1,5 +1,5 @@
 .homepage {
-   background-color: rgba(200, 167, 162, 0.641);
+   background-color: var(--homepage-background-color);
    padding: 50px;
    box-sizing: border-box;
 }
@@ -19,5 +19,9 @@
    transition: all 0.25s ease-in-out;
    cursor: pointer;
 
+}
 
+.homepage .main_container .element:hover {
+   transform: scale(1.015); 
+   box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
 }
